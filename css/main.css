@@ -1,0 +1,72 @@
+.hero {
+  width: 1300px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.hero__title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.hero__label {
+  margin-left: 400px;
+  margin-right: 30px;
+}
+
+.hero__input {
+  width: 250px;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.hero__error {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.list {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list__item {
+  position: relative;
+  width: 210px;
+  padding-bottom: 30px;
+  text-align: center;
+  list-style-type: none;
+  border: 3px solid #333;
+  border-radius: 10px;
+}
+
+.list__item::before {
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  width: 64px;
+  height: 64px;
+  background-image: url("../images/man.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+}
+
+.list__item:nth-child(2)::before {
+  background-image: url("../images/bike.png");
+}
+
+.list__item:nth-child(3)::before {
+  background-image: url("../images/car.png");
+}
+
+.list__item:nth-child(4)::before {
+  background-image: url("../images/airplane.png");
+}
+
+.list__text {
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
